@@ -1,15 +1,17 @@
 import '../css/App.css';
 import Header from "./Header";
-import Content from "./Content";
+import TestDashboard from "./TestDashboard";
 
-function App() {
+const App = () => {
     return (
+
         <div className="App">
             <Header title="Психологические тесты"/>
             <main>
-                <Content title="Тест 1"/>
+                <TestDashboard/>
             </main>
         </div>
+
     );
 }
 
