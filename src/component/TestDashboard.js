@@ -3,6 +3,7 @@ import axios from "axios";
 import '../css/TestDashboard.css';
 import TestCard from "./TestCard";
 import ModalTestCard from "./ModalTestCard";
+import { useTheme } from './ThemeContext';
 
 const baseUrl = 'http://localhost:8080/api/v1/tests';
 
@@ -12,6 +13,8 @@ const TestDashboard = () => {
     const [error, setError] = useState(null);
     const [openModal, setOpenModal] = useState(false);
     const [activeTestId, setActiveTestId] = useState(null);
+
+    const { theme, toggleTheme } = useTheme();
 
     const openModalHandler = (testId) => {
         setOpenModal(true);
@@ -37,7 +40,7 @@ const TestDashboard = () => {
     return (
         <div className="content">
             <div>
-                <span className="test-list-title">Онлайн тесты</span>
+                <span className={`test-list-title ${theme}-theme`}>Онлайн тесты</span>
             </div>
 
             <div className="test-dashboard">

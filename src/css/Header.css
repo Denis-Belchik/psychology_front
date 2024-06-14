@@ -1,14 +1,19 @@
 .header {
-    /*background-color: #fff;*/
-    background-color: #312f36;
-    /*color: #5E5C74;*/
-    /*color: #5e5e73;*/
-    color: #DDDFEB;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 80px;
-    box-shadow: 0 2px 2px rgba(118, 117, 144, 0.12);
+    box-shadow: 0 3px 3px rgba(118, 117, 144, 0.12);
     letter-spacing: 0.02em;
     line-height: 1.7;
     font-size: 15px;
+}
+
+header.light-theme {
+    background-color: #FFFFFF;
+    color: #5E5C74;
+}
+
+header.dark-theme {
+    background-color: #312f36;
+    color: #DDDFEB;
 }

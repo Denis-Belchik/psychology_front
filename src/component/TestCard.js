@@ -1,8 +1,10 @@
 import '../css/TestCard.css';
+import { useTheme } from './ThemeContext';
 
 const TestCard = (props) => {
 
-    const classes = `test-card test-card-btn ${props.className}`;
+    const { theme, toggleTheme } = useTheme();
+    const classes = `test-card test-card-btn ${props.className} ${theme}-theme`;
 
     return (
 

@@ -1,3 +1,10 @@
+.test-list-title.light-theme{
+    /*color: #5e5d73;*/
+}
+.test-list-title.dark-theme{
+    /*color: #DDDFEB;*/
+}
+
 .content {
     display: grid;
     grid-row-gap: 25px;
@@ -11,7 +18,7 @@
 
 .test-list-title{
     /*color: #5e5d73;*/
-    color: #DDDFEB;
+    /*color: #DDDFEB;*/
     font-size: 25px;
 }
 

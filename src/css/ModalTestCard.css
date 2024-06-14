@@ -1,3 +1,30 @@
+.modal.light-theme {
+    background-color: #F1F4F7;
+}
+
+.modal-test-btn.light-theme {
+    background-color: #D9E1E7;
+}
+
+.modal-test-btn.light-theme:hover  {
+    box-shadow: 0 0 0 2px #F1F4F7, 0 0 0 5px #5F5E7B;
+}
+
+
+.modal.dark-theme {
+    background-color: #5F5E7B;
+}
+
+.modal-test-btn.dark-theme {
+    background-color: #4F4E66;
+}
+
+.modal-test-btn.dark-theme:hover  {
+    box-shadow: 0 0 0 1px #DDDFEB, 0 0 0 4px #4F4E66;
+}
+
+
+
 .overlay {
     position: fixed;
     left: 0;
@@ -10,7 +37,7 @@
 }
 
 .modal {
-    background-color: #5F5E7B;
+    /*background-color: #5F5E7B;*/
     width: 80%;
     height: 80%;
     padding: 40px 30px;
@@ -61,13 +88,13 @@
     border-radius: 10px;
     color: inherit;
     transition: .2s linear;
-    background: #4F4E66;
+    /*background: #4F4E66;*/
     padding: 10px 10px;
 }
 
-.modal-test-btn:hover  {
-    box-shadow: 0 0 0 1px #DDDFEB, 0 0 0 4px #4F4E66;
-}
+/*.modal-test-btn:hover  {*/
+/*    box-shadow: 0 0 0 1px #DDDFEB, 0 0 0 4px #4F4E66;*/
+/*}*/
 
 .h {
     text-align: center;
