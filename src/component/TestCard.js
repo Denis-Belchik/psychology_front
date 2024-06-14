@@ -1,8 +1,8 @@
-import '../css/TestUnitInList.css';
+import '../css/TestCard.css';
 
 const TestCard = (props) => {
 
-    const classes = `test-card button ${props.className}`;
+    const classes = `test-card test-card-btn ${props.className}`;
 
     return (
 
