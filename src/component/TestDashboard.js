@@ -32,6 +32,8 @@ const TestDashboard = () => {
             });
     }, []);
 
+    const test = testList.find(test => test.id === activeTestId);
+
     return (
         <div className="content">
             <div>
@@ -53,10 +55,9 @@ const TestDashboard = () => {
 
             <ModalTestCard
                 closeModal={() => closeModalHandler()}
-                description={testList.find(test => test.id === activeTestId) ?
-                    testList.find(test => test.id === activeTestId).description :
-                    ''
-                }
+                title={test ? test.title : ''}
+                description={test ? test.description : ''}
+                instructions={test ? test.instructions : ''}
                 openModal={openModal}
             />
 
