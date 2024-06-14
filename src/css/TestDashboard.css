@@ -2,20 +2,20 @@
     display: grid;
     grid-row-gap: 25px;
     padding-top: 25px;
-    width: 970px;
+    width: 1000px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.test-name-list{
+.test-list-title{
     /*color: #5e5d73;*/
     color: #DDDFEB;
     font-size: 25px;
 }
 
-.container {
+.test-dashboard {
     display: grid;
     grid-row-gap: 25px;
 }
