@@ -5,16 +5,19 @@ import App from './component/App';
 import reportWebVitals from './reportWebVitals';
 import {ThemeProvider} from './component/ThemeContext';
 
+// Создается корневой элемент (root) с ReactDOM.createRoot, который является контейнером для приложения
+// и привязывается к элементу с id='root' в HTML-документе.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+    // Рендер в строгом режиме (StrictMode), который помогает обнаруживать потенциальные проблемы в приложении.
     <React.StrictMode>
+        {/* Для предоставления функциональности смены тем. */}
         <ThemeProvider>
             <App/>
         </ThemeProvider>
     </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+// Утилита для отслеживания производительности
 reportWebVitals();

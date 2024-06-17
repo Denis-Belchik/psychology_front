@@ -1,14 +1,16 @@
-import Header from "./Header";
+import Header from "./header/Header";
 import TestDashboard from "./TestDashboard";
 
 const App = () => {
     return (
-            <div className="App">
+
+            <>
                 <Header title="Психологические тесты"/>
                 <main>
                     <TestDashboard/>
                 </main>
-            </div>
+            </>
+
     );
 }
 
