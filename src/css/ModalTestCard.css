@@ -75,7 +75,7 @@
 
 .buttons-container {
     display: flex;
-    justify-content: space-between; /* Располагает кнопки по краям контейнера */
+    justify-content: right; /* Располагает кнопки по краям контейнера */
 }
 
 .modal-test-btn {

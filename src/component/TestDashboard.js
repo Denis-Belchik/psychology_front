@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useMemo} from 'react';
 import axios from "axios";
 import '../css/TestDashboard.css';
 import TestCard from "./TestCard";
@@ -35,7 +35,9 @@ const TestDashboard = () => {
             });
     }, []);
 
-    const test = testList.find(test => test.id === activeTestId);
+    const test = useMemo(() => {
+        return testList.find(test => test.id === activeTestId);
+    }, [activeTestId, testList]);
 
     return (
         <div className="content">
@@ -44,7 +46,7 @@ const TestDashboard = () => {
             </div>
 
             <div className="test-dashboard">
-                {error && <div className="error-message">Ошибка: {this.state.error}</div>}
+                {error && <div className="error-message">Ошибка: {error}</div>}
                 {testList.map((el, index) =>
                     <TestCard
                         openModal={() => openModalHandler(el.id)}
